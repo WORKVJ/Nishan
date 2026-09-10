@@ -1,0 +1,40 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="curveGrad1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFBB00" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#FF7700" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFBB00" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#141414" stop-opacity="0" />
+    </linearGradient>
+    <filter id="waveGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="35" result="glowBlur" />
+      <feComposite in="SourceGraphic" in2="glowBlur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Circular Acoustic Iso-Lines -->
+  <g opacity="0.3">
+    <ellipse cx="500" cy="650" rx="380" ry="240" stroke="#FFBB00" stroke-width="1.5" stroke-dasharray="8 8" transform="rotate(-15 500 650)" />
+    <ellipse cx="500" cy="650" rx="480" ry="320" stroke="#ffffff" stroke-width="1" stroke-dasharray="3 9" transform="rotate(-15 500 650)" />
+    <ellipse cx="500" cy="650" rx="600" ry="400" stroke="#FFBB00" stroke-width="1.5" stroke-dasharray="12 12" transform="rotate(-15 500 650)" />
+  </g>
+
+  <!-- 3D Ribbon Soundwave Flow -->
+  <path d="M50,450 C250,750 450,250 650,600 C850,950 1050,400 1150,650" fill="none" stroke="url(#curveGrad1)" stroke-width="10" filter="url(#waveGlow)" />
+  <path d="M50,470 C250,770 450,270 650,620 C850,970 1050,420 1150,670" fill="none" stroke="#FFBB00" stroke-width="3" opacity="0.85" />
+  <path d="M50,490 C250,790 450,290 650,640 C850,990 1050,440 1150,690" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5" />
+  
+  <!-- Digital Audio Clock & Console Marks -->
+  <g opacity="0.75">
+    <rect x="250" y="320" width="120" height="40" rx="8" fill="#1e1e24" stroke="#FFBB00" stroke-width="1" />
+    <text x="265" y="345" fill="#FFBB00" font-family="'Urbanist', monospace" font-size="14" font-weight="700" letter-spacing="1.5">96.0 kHz</text>
+
+    <rect x="780" y="720" width="140" height="40" rx="8" fill="#1e1e24" stroke="#ffffff" stroke-width="1" opacity="0.8" />
+    <text x="795" y="745" fill="#ffffff" font-family="'Urbanist', monospace" font-size="14" font-weight="700" letter-spacing="1.5">DANTE AoIP</text>
+
+    <line x1="200" y1="850" x2="1000" y2="850" stroke="#FFBB00" stroke-width="1" stroke-dasharray="5 5" opacity="0.4" />
+  </g>
+</svg>
